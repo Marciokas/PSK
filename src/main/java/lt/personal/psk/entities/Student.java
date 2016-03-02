@@ -36,8 +36,8 @@ import javax.validation.constraints.Size;
 		@NamedQuery(name = "Student.findByRegistrationNo", query = "SELECT s FROM Student s WHERE s.registrationNo = :registrationNo"),
 		@NamedQuery(name = "Student.findByOptLockVersion", query = "SELECT s FROM Student s WHERE s.optLockVersion = :optLockVersion") })
 public class Student implements Serializable {
-
 	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional = false)
@@ -74,7 +74,7 @@ public class Student implements Serializable {
 	public Integer getId() {
 		return id;
 	}
-//something
+
 	public void setId(Integer id) {
 		this.id = id;
 	}
@@ -150,7 +150,7 @@ public class Student implements Serializable {
 
 	@Override
 	public String toString() {
-		return "lt.personal.psk.entities.Student[ id=" + id + " ]";
+		return "Student id=" + id + " ]";
 	}
 
 }
