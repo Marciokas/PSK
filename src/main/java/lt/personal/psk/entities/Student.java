@@ -130,19 +130,17 @@ public class Student implements Serializable {
 	@Override
 	public int hashCode() {
 		int hash = 0;
-		hash += (id != null ? id.hashCode() : 0);
+		hash += (registrationNo != null ? registrationNo.hashCode() : 0);
 		return hash;
 	}
-
+	
 	@Override
 	public boolean equals(Object object) {
-		// TODO: Warning - this method won't work in the case the id fields are
-		// not set
 		if (!(object instanceof Student)) {
 			return false;
 		}
 		Student other = (Student) object;
-		if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+		if ((this.registrationNo == null && other.registrationNo != null) || (this.registrationNo != null && !this.registrationNo.equals(other.registrationNo))) {
 			return false;
 		}
 		return true;
