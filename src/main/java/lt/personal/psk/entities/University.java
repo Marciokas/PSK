@@ -90,18 +90,17 @@ public class University implements Serializable {
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
+        hash += (title != null ? title.hashCode() : 0);
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
         if (!(object instanceof University)) {
             return false;
         }
         University other = (University) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+        if ((this.title == null && other.title != null) || (this.title != null && !this.title.equals(other.title))) {
             return false;
         }
         return true;

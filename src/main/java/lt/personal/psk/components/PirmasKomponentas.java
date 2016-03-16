@@ -1,4 +1,4 @@
-package lt.personal.psk.entities;
+package lt.personal.psk.components;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
